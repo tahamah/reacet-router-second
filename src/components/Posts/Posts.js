@@ -9,8 +9,8 @@ const Posts = () => {
             .then((data) => setPosts(data))
     }, [])
     return (
-        <div>
-            <h1 className="text-2xl my-4 font-medium">
+        <div className="max-w-screen-xl mx-auto">
+            <h1 className="text-2xl pt-10 pb-5 mt-20 font-medium">
                 Every Posts Facebook ever had: {posts.length}
             </h1>
             <div className="flex flex-wrap">
@@ -23,8 +23,8 @@ const Posts = () => {
                         {post.id}
                     </Link>
                 ))}
-                <Outlet></Outlet>
             </div>
+            <Outlet></Outlet>
         </div>
     )
 }

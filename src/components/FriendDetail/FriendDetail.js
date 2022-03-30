@@ -11,7 +11,7 @@ const FriendDetail = () => {
     }, [])
     const { name, email, address } = detail
     return (
-        <div className="rounded-lg w-3/5 md:w-2/5 lg:w-1/5 p-6 border-2 mx-auto mt-10 border-sky-500">
+        <div className="rounded-lg w-3/5 md:w-2/5 lg:w-1/5 p-6 border-2 mx-auto mt-20 border-sky-500">
             <div>
                 <h1> Name: {name}</h1>
                 <p>Email:{email}</p>

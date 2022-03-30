@@ -8,7 +8,7 @@ const Friend = ({ friend }) => {
         navigate('/friend/' + id)
     }
     return (
-        <div className="rounded-lg p-3 border-2 border-sky-500">
+        <div className="rounded-lg p-3 border-4 border-sky-500">
             <h1>Name: {name}</h1>
             {/* <Link
                 className="bg-sky-500 text-white px-4 pb-1 rounded mt-5 hover:bg-sky-800 text-sky"

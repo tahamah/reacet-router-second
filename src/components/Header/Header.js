@@ -18,12 +18,12 @@ const Header = () => {
                     About
                 </CustomLink>
             </nav>
-            <div>
+            {/* <div>
                 <h1 className="text-4xl font-bold py-5 mt-20">
                     {' '}
                     Hello World! This is Header
                 </h1>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -14,7 +14,7 @@ const Friends = () => {
             <h1 className="mb-6 text-3xl font-semibold">
                 Friends: {friends.length}
             </h1>
-            <div className="grid lg:grid-cols-4 gap-4 md:grid-cols-3 gap-4">
+            <div className="grid lg:grid-cols-4 gap-4 md:grid-cols-3 ">
                 {friends.map((friend) => (
                     <Friend key={friend.id} friend={friend}></Friend>
                 ))}

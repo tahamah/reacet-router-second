@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import CustomLink from '../CustomLink/CustomLink'
 
 const Header = () => {
     return (
-        <div>
-            <nav className="bg-sky-500 mb-8 py-5 flex justify-center text-white  text-2xl">
+        <div className="relative">
+            <nav className="bg-sky-500 py-5 fixed top-0 w-full flex justify-center text-white  text-2xl">
                 <CustomLink className="m-3" to="/">
                     Home
                 </CustomLink>
@@ -16,10 +15,12 @@ const Header = () => {
                     About
                 </CustomLink>
             </nav>
-            <h1 className="text-4xl font-bold mb-5">
-                {' '}
-                Hello World! This is Header
-            </h1>
+            <div>
+                <h1 className="text-4xl font-bold py-5 mt-20">
+                    {' '}
+                    Hello World! This is Header
+                </h1>
+            </div>
         </div>
     )
 }

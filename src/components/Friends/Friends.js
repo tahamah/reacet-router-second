@@ -9,10 +9,12 @@ const Friends = () => {
             .then((data) => setFriends(data))
     }, [])
     return (
-        <div>
+        <div className="mx-16">
             <h1 className="mb-12 text-4xl"> I am From Friends</h1>
-            <h1 className="mb-2 text-3xl">Friends: {friends.length}</h1>
-            <div>
+            <h1 className="mb-6 text-3xl font-semibold">
+                Friends: {friends.length}
+            </h1>
+            <div className="grid lg:grid-cols-4 gap-4 md:grid-cols-3 gap-4">
                 {friends.map((friend) => (
                     <Friend key={friend.id} friend={friend}></Friend>
                 ))}
